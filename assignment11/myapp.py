@@ -9,7 +9,7 @@ df = pldata.gapminder(return_type='pandas')
 countries = pd.Series(df['country'].unique())
 # Initialize Dash app
 app = Dash(__name__)
-
+server = app.server
 
 # Layout
 app.layout = html.Div([
